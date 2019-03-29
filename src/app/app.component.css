@@ -1,0 +1,14 @@
+nav {
+  display: inline;
+}
+
+.links {
+  text-align: center;
+  background-color: #224270;
+}
+
+.links:hover {
+  background-color: #3c68a8;
+  cursor: pointer;
+  color: #607d8b;
+}

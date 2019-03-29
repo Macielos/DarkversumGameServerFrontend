@@ -1,0 +1,14 @@
+<div *ngIf="selectedPlayer" class="details">
+  <h2>{{selectedPlayer.name | uppercase}} details</h2>
+  <div><span>ID: </span>{{selectedPlayer.id}}</div>
+  <div>
+    <label>Name:
+      <input [(ngModel)]="selectedPlayer.name" placeholder="name"/>
+    </label>
+  </div>
+  <div><span>Status: </span>{{selectedPlayer.status}}</div>
+  <div><span>Region: </span>{{selectedPlayer.region}}</div>
+  <div><span>Created at: </span>{{selectedPlayer.createdDate}}</div>
+  <div><span>Updated at: </span>{{selectedPlayer.updatedDate}}</div>
+  <button (click)="goBack()">Back</button>
+</div>

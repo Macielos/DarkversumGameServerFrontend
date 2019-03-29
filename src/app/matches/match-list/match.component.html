@@ -1,0 +1,22 @@
+<div>
+  <h2>Matches</h2>
+  <button (click)="refresh()">Refresh</button>
+  <table>
+    <tr>
+      <th *ngFor="let col of columns">
+        {{col | uppercase}}
+      </th>
+    </tr>
+    <tr *ngFor="let match of matches">
+      <td>
+        <a routerLink="/match-detail/{{match.id}}">
+          {{match.id}}
+        </a>
+      </td>
+      <td>{{match.status}}</td>
+      <td>{{match.players.length}}</td>
+      <td>{{match.createdDate}}</td>
+      <td>{{match.updatedDate}}</td>
+    </tr>
+  </table>
+</div>

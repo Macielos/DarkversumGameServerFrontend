@@ -1,0 +1,26 @@
+/* DashboardComponent's private CSS styles */
+[class*='col-'] {
+  float: left;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+.col-1-4 {
+  width: 20%;
+}
+.module {
+  padding: 20px;
+  text-align: center;
+  max-height: 120px;
+  min-width: 120px;
+  background-color: #224270;
+  border-radius: 2px;
+}
+.module:hover {
+  background-color: #3c68a8;
+  cursor: pointer;
+  color: #607d8b;
+}

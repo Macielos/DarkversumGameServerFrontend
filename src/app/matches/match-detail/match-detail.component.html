@@ -1,0 +1,12 @@
+<div *ngIf="selectedMatch" class="details">
+  <h2>Match details</h2>
+  <div><span>ID: </span>{{selectedMatch.id}}</div>
+  <div><span>Status: </span>{{selectedMatch.status}}</div>
+  <div><span>Players: </span>{{selectedMatch.players.length}}</div>
+  <div *ngFor="let player of selectedMatch.players">
+    <div class="nested">{{player.playerName}}<span>: </span>{{player.factionName}}</div>
+  </div>
+  <div><span>Created at: </span>{{selectedMatch.createdDate}}</div>
+  <div><span>Updated at: </span>{{selectedMatch.updatedDate}}</div>
+  <button (click)="goBack()">Back</button>
+</div>

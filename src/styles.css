@@ -1,0 +1,39 @@
+/* You can add global styles to this file, and also import other style files */
+h1, h2 {
+  font-family: "Palatino Linotype", sans-serif;
+  font-weight: lighter;
+}
+
+* {
+  color: white;
+  font-family: "Calibri Light", sans-serif;
+  font-weight: lighter;
+  font-size: 26px;
+}
+
+.details {
+  width: 80%;
+}
+
+table {
+  width: 80%;
+}
+
+th {
+  alignment: left;
+  text-align: left;
+}
+
+/*===BACKGROUNDS===*/
+
+body {
+  background-color: #0b264f;
+}
+
+th {
+  background-color: #0c203d
+}
+
+tr, .details, .messages, input, button {
+  background-color: #1b3254
+}

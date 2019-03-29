@@ -1,0 +1,23 @@
+<div>
+  <h2>Players</h2>
+  <button (click)="refresh()">Refresh</button>
+  <table>
+    <tr>
+      <th *ngFor="let col of columns">
+        {{col | uppercase}}
+      </th>
+    </tr>
+    <tr *ngFor="let player of players">
+      <td>{{player.id}}</td>
+      <td>
+        <a routerLink="/player-detail/{{player.id}}">
+        {{player.name}}
+         </a>
+      </td>
+      <td>{{player.status}}</td>
+      <td>{{player.region}}</td>
+      <td>{{player.createdDate}}</td>
+      <td>{{player.updatedDate}}</td>
+    </tr>
+  </table>
+</div>
